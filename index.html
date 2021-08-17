@@ -8,7 +8,6 @@
 	<title>TUGAS GRAFIKA</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Bootstrap CSS -->
 	<style type="text/css">
 		h3{
@@ -22,9 +21,47 @@
 	font-family: sans-serif;
 	font-weight: normal;
 }
-		.container h1 {
-            font-size: 8vw;
-        }
+body {
+   margin: 0;
+   padding: 0;
+}
+ 
+.container {
+   display: flex;
+   flex-wrap: wrap;
+}
+ 
+.box {
+   min-height: 150px;
+   width: 100%;
+}
+ 
+/*untuk layar device berukuran kecil*/
+@media screen and (min-width: 450px) {
+   .light_blue, .green {
+       width: 50%
+   }
+}
+ 
+/*untuk layar device berukuran sedang*/
+@media screen and (min-width: 550px) {
+   .red {
+       width: 33%;
+   }
+ 
+   .orange {
+       width: 67%;
+   }
+}
+ 
+/*untuk layar device berukuran besar*/
+@media screen and (min-width: 800px) {
+   .container {
+       width: 800px;
+       margin-left: auto;
+       margin-right: auto;
+   }
+}
 		
  
  @media only screen and (min-width: 480px) {
