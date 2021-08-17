@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script type="text/javascript" src="copperlichtdata/copperlicht.js"></script>
+	<title>TUGAS GRAFIKA</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!-- Bootstrap CSS -->
+	<style type="text/css">
+		h3{
+			background-color: 	#00FF7F;
+			text-align: center;
+			padding: 5px;
+			cursor: pointer;
+
+		}
+		h2{
+	font-family: sans-serif;
+	font-weight: normal;
+}
+ 
+ @media only screen and (min-width: 480px) {
+  nav a {
+    float: left;
+    width: 30%;
+    margin: 0 0 0 5%;
+    padding: 25px 1%;
+    margin-bottom: 0;
+  }
+  nav li:first-child a {
+    margin-left: 0;
+  }
+  nav li:last-child a {
+    margin-right: 0;
+  }
+ 
+}
+@media only screen and (min-width: 768px) {
+  .title {
+    float: left;
+    font-size: 1.4em;
+  }
+  nav {
+    float: right;
+    width: 60%;
+  }
+  nav a {
+    padding: 15px 1%;
+  }
+  .main article {
+    float: left;
+    width: 57%;
+  }
+  .main aside {
+    float: right;
+    width: 38%;
+  }
+}
+.malasngoding-slider { 
+	border: 10px solid #efefef; 
+	position: relative; 
+	overflow: hidden; 
+	background: #efefef;
+}
+ 
+.malasngoding-slider { 
+	margin:20px auto;
+	width: 768px;
+	height: 450px; 
+}
+ 
+.isi-slider img { 
+	width: 768px;
+	height: 450px; 
+	float: left;
+}
+ 
+.isi-slider { 
+	position: absolute; 
+	width:3900px;  
+ 
+	/*pengaturan durasi lama tampil gambar bisa di atur di bawah ini*/
+	animation-name:slider;
+	animation-duration:16s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count:infinite;
+	-webkit-animation-name:slider;
+	-webkit-animation-duration:16s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count:infinite;
+	-moz-animation-name:slider;
+	-moz-animation-duration:16s;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-iteration-count:infinite;
+	-o-animation-name:slider;
+	-o-animation-duration:16s;
+	-o-animation-timing-function: ease-in-out;
+	-o-animation-iteration-count:infinite;
+}
+ 
+.isi-slider:hover { 
+	-webkit-animation-play-state:paused; 
+	-moz-animation-play-state:paused; 
+	-o-animation-play-state:paused; 
+	animation-play-state:paused; }
+}
+ 
+.isi-slider img { 
+	float: right; 
+}
+ 
+.malasngoding-slider:after { 
+	font-size: 150px; 
+	position: absolute; 
+	z-index: 12; 
+	color: rgba(255,255,255, 0); 
+	left: 300px; top: 80px; 
+	-webkit-transition: 1s all ease-in-out; 
+	-moz-transition: 1s all ease-in-out; 
+	transition: 1s all ease-in-out; 
+}
+ 
+.malasngoding-slider:hover:after { 
+	color: rgba(255,255,255, 0.6);  
+}
+ 
+ 
+ 
+@-moz-keyframes slider {     
+	0% {
+		left: 0; opacity: 0; 
+	}     
+	2% {
+		opacity: 1; 
+	}     
+	20% {
+		left: 0; opacity: 1; 
+	}     
+	21% {
+		opacity: 0; 
+	}     
+	24% {
+		opacity: 0; 
+	}     
+	25% {
+		left: -768px; opacity: 1; 
+	}       
+	45% {
+		left: -768px; opacity: 1; 
+	}     
+	46% {
+		opacity: 0; 
+	}     
+	48% {
+		opacity: 0; 
+	}     
+	50% {
+		left: -1536px; opacity: 1; 
+	}     
+	70% {
+		left: -1536px; opacity: 1; 
+	}     
+	72% {
+		opacity: 0; 
+	}     
+	74% {
+		opacity: 0; 
+	}    
+	75% {
+		left: -2304px; opacity: 1; 
+	}   	
+	95% {
+		left: -2304px; opacity: 1; 
+	}   	
+	97% { 
+		left: -2304px; opacity: 0;
+	}   	
+	100% {
+		left: 0; opacity: 0; 
+	}
+} 
+ 
+@-webkit-keyframes slider {     
+	0% {
+		left: 0; opacity: 0; 
+	}     
+	2% {
+		opacity: 1; 
+	}     
+	20% {
+		left: 0; opacity: 1; 
+	}     
+	21% {
+		opacity: 0; 
+	}     
+	24% {
+		opacity: 0; 
+	}     
+	25% {
+		left: -768px; opacity: 1; 
+	}       
+	45% {
+		left: -768px; opacity: 1; 
+	}     
+	46% {
+		opacity: 0; 
+	}     
+	48% {
+		opacity: 0; 
+	}     
+	50% {
+		left: -1536px; opacity: 1; 
+	}     
+	70% {
+		left: -1536px; opacity: 1; 
+	}     
+	72% {
+		opacity: 0; 
+	}     
+	74% {
+		opacity: 0; 
+	}    
+	75% {
+		left: -2304px; opacity: 1; 
+	}   	
+	95% {
+		left: -2304px; opacity: 1; 
+	}   	
+	97% { 
+		left: -2304px; opacity: 0;
+	}   	
+	100% {
+		left: 0; opacity: 0; 
+	}
+} 
+ 
+ 
+@keyframes slider {     
+	0% {
+		left: 0; opacity: 0; 
+	}     
+	2% {
+		opacity: 1; 
+	}     
+	20% {
+		left: 0; opacity: 1; 
+	}     
+	21% {
+		opacity: 0; 
+	}     
+	24% {
+		opacity: 0; 
+	}     
+	25% {
+		left: -768px; opacity: 1; 
+	}     
+	45% {
+		left: -768px; opacity: 1; 
+	}     
+	46% {
+		opacity: 0; 
+	}     
+	48% {
+		opacity: 0; 
+	}     
+	50% {
+		left: -1536px; opacity: 1; 
+	}     
+	70% {
+		left: -1536px; opacity: 1; 
+	}     
+	72% {
+		opacity: 0; 
+	}     
+	74% {
+		opacity: 0; 
+	}    
+	75% {
+		left: -2304px; opacity: 1; 
+	}   	
+	95% {
+		left: -2304px; opacity: 1; 
+	}   	
+	97% { 
+		left: -2304px; opacity: 0; 
+	} 
+ 
+	100% {
+		left: 0; opacity: 0; 
+	}
+}
+
+
+	</style>
+</head>
+<body>
+<h4 align="center" ><b> Saya Saranin Menggunakan Situs Desktop Jika Menggunakan Android </b></h4>
+
+	<h3> Nama Anggota </h3>
+	<ul type="disc">
+		<li>Ahmad Januar Amri - 19312162 </li>
+		<li>Alif Danang Pinangkis - 19312168 </li>
+	</ul>
+
+
+<h3 > Hasil Cooppercube </h3>
+<div align="center">
+		<canvas id="3darea" width="800" height="600" style="background-color:#"#000000">
+		</canvas>
+	</div>
+	<script type="text/javascript">
+	<!--
+			startCopperLichtFromFile('3darea', 'copperlichtdata/coppeer.ccbz', 'coper<br/><br/><img style="max-width:50%" src="copperlichtdata/coppercubeloadinglogo.png" />', 'Error: This browser does not support WebGL (or it is disabled).<br/>See <a href=\"http://www.ambiera.com/copperlicht/browsersupport.html\">here</a> for details.', false, true, "#000000");
+	-->
+	</script>
+	<br/>
+	<div align="center">
+		<small>Created using <a href="http://www.ambiera.com/coppercube/index.html">CopperCube</a></small>	</div>
+
+<h3>Hasil Agisoft </h3>
+
+	<div class=malasngoding-slider>
+		<div class=isi-slider>
+			<img src="2.jpg" alt="Gambar 1">
+			<img src="3.jpg" alt="Gambar 2">
+			<img src="4.jpg" alt="Gambar 3">
+		</div>
+	</div>
+
+<h3>Hasil Blender </h3>
+
+	<div class=malasngoding-slider>
+		<div class=isi-slider>
+			<img src="blender1.jpg" alt="Gambar 1">
+			<img src="blender2.jpg" alt="Gambar 2">
+		</div>
+	</div>
+<h3>Informasi Foto </h3>
+<p>
+	<ul>
+		<li>Jumlah Foto 57 Foto</li>
+		<li>Lama Pengerjaan Sekitar 3 hari </li>
+		<li>Sudah Melakukan Percobaan 5 x Gagal lagi ,akhirnya objek terakhir hampir jadi dan hasilnya ada diatas  </li>
+
+	</ul>
+</p>
+<h3>Teima Kasih</h3>
+</body>
+</html>
